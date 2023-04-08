@@ -1,0 +1,10 @@
+{% for service in altservices %}
+<div class="icon-box d-flex position-relative" data-aos="fade-up">
+    <i class="bi bi-easel flex-shrink-0"></i>
+    <div>
+      <h4><a href="" class="stretched-link">{{service.title }}</a></h4>
+      <p>{{ service.description }}</p>
+    </div>
+  </div><!-- End Icon Box -->
+
+{% endfor %}

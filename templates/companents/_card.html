@@ -1,0 +1,15 @@
+{% for cardsection in  card %}
+<div class="card-item">
+    <div class="row">
+      <div class="col-xl-5">
+        <div class="card-bg" style="background-image: url({{ cardsection.image.url }});"></div>
+      </div>
+      <div class="col-xl-7 d-flex align-items-center">
+        <div class="card-body">
+          <h4 class="card-title">{{ cardsection.title }}</h4>
+          <p>{{ cardsection.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endfor %}
